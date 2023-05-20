@@ -5,7 +5,7 @@ import { useFrame } from "@react-three/fiber";
 import { useMemo, useRef } from "react";
 
 const Blob = () => {
-  const mesh = useRef();
+  const mesh = useRef<any>();
   const uniforms = useMemo(
     () => ({
       color1: {
@@ -32,7 +32,6 @@ const Blob = () => {
         vertexShader={vertex}
         uniforms={uniforms}
         // wireframe={true}
-        // wireframeLinewidth={0.9}
       />
     </mesh>
   );
