@@ -12,10 +12,10 @@ const Blob = () => {
       //   value: 0.0,
       // },
       color1: {
-        value: new THREE.Color("red"),
+        value: new THREE.Color("#ebf4f5"),
       },
       color2: {
-        value: new THREE.Color("purple"),
+        value: new THREE.Color("#133a94"),
       },
     }),
     []
@@ -26,7 +26,9 @@ const Blob = () => {
     // console.log(clock);
     // mesh.current.material.uniforms.time.value += 0.007;
     // mesh.current.rotateZ(0.004);
-    // mesh.current.rotation.z += 0.004;
+    mesh.current.rotation.z += 0.004;
+    mesh.current.rotation.x += 0.004;
+    mesh.current.rotation.y += 0.004;
     // updateColor(valor)
     // setTimeout(() => {
     //   updateColor(100);
@@ -35,35 +37,13 @@ const Blob = () => {
 
   return (
     <mesh ref={mesh}>
-      <sphereBufferGeometry args={[1.5, 32, 32]} attach="geometry" />
-      {/* <boxBufferGeometry args={[1, 1, 1]} attach={"geometry"} /> */}
+      <boxBufferGeometry args={[2, 2, 2]} attach={"geometry"} />
       <shaderMaterial
-        fragmentShader={`
-        
-        uniform vec3 color1;
-        uniform vec3 color2;
-      
-        varying vec2 vUv;
-        
-        void main() {
-          
-          gl_FragColor = vec4(mix(color1, color2, vUv.y), 1.0);
-        }
-       `}
-        vertexShader={`
-          varying vec2 vUv;
-
-          void main() {
-            vUv = uv;
-            gl_Position = projectionMatrix * modelViewMatrix * vec4(position,1.0);
-          }
-          `}
-        // side={THREE.DoubleSide}
-        // extensions={{
-        //   derivatives: "#extension GL_OES_standard_derivatives : enable",
-        // }}
+        fragmentShader={fragment}
+        vertexShader={vertex}
         uniforms={uniforms}
-        wireframe={true}
+        // wireframe={true}
+        // wireframeLinewidth={0.9}
       />
     </mesh>
   );

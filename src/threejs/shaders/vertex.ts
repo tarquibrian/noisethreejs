@@ -1,10 +1,6 @@
-export const vertex = `uniform float time;
-varying vec2 vUv;
-varying vec3 vPosition;
-uniform vec2 pixels;
-float PI = 3.141592653589793238;
+export const vertex = `varying vec2 vUv;
+
 void main() {
   vUv = uv;
-  vPosition = position;
-  gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+  gl_Position = projectionMatrix * modelViewMatrix * vec4(position,1.0);
 }`;
