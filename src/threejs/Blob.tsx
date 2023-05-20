@@ -1,5 +1,10 @@
-const Blob2 = () => {
-  const [color, setColor] = useState(0.0);
+import * as THREE from "three";
+import { fragment } from "./shaders/fragment";
+import { vertex } from "./shaders/vertex";
+import { useFrame } from "@react-three/fiber";
+import { useMemo, useRef } from "react";
+
+const Blob = () => {
   const mesh = useRef();
   const uniforms = useMemo(
     () => ({
@@ -7,46 +12,18 @@ const Blob2 = () => {
       //   value: 0.0,
       // },
       time: { value: 0 },
-      color: { value: color },
+      color: { value: 0.8 },
       resolution: { value: new THREE.Vector4() },
     }),
-    [color]
+    []
   );
-
-  const updateColor = (valor) => {
-    let meshcolor = mesh.current.material.uniforms.color.value * 100;
-
-    if (meshcolor < valor) {
-      while (meshcolor < valor) {
-        meshcolor++;
-        mesh.current.material.uniforms.color.value = meshcolor / 100;
-      }
-    }
-    if (meshcolor > valor) {
-      while (meshcolor > valor) {
-        meshcolor--;
-        mesh.current.material.uniforms.color.value = meshcolor / 100;
-      }
-    }
-
-    console.log(meshcolor / 100);
-  };
-
-  useEffect(() => {
-    // gl === WebGLRenderer
-    // gl.info.calls
-    // console.log(gl.info);
-    // setTimeout(() => {
-    //   updateColor(100);
-    // }, 2000);
-  });
 
   useFrame(() => {
     // const { clock } = state;
     // console.log(clock);
-    mesh.current.material.uniforms.time.value += 0.007;
+    // mesh.current.material.uniforms.time.value += 0.007;
     // mesh.current.rotateZ(0.004);
-    mesh.current.rotation.z += 0.004;
+    // mesh.current.rotation.z += 0.004;
     // updateColor(valor)
     // setTimeout(() => {
     //   updateColor(100);
@@ -55,9 +32,10 @@ const Blob2 = () => {
 
   return (
     <mesh ref={mesh}>
-      {/* <sphereBufferGeometry args={[1.5, 32, 32]} attach="geometry" /> */}
-      <planeBufferGeometry args={[0, 0]} attach={"geometry"}/>
-      <shaderMaterial
+      <sphereBufferGeometry args={[1.5, 32, 32]} attach="geometry" />
+      {/* <boxBufferGeometry args={[1, 1, 1]} attach={"geometry"} /> */}
+      <meshLambertMaterial color={"#F00"} emissive={"#0FF"} />
+      {/* <shaderMaterial
         fragmentShader={fragment}
         vertexShader={vertex}
         side={THREE.DoubleSide}
@@ -65,8 +43,9 @@ const Blob2 = () => {
           derivatives: "#extension GL_OES_standard_derivatives : enable",
         }}
         uniforms={uniforms}
-        // transparent="true"
-      />
+      /> */}
     </mesh>
   );
 };
+
+export default Blob;
