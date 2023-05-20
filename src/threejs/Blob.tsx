@@ -11,9 +11,12 @@ const Blob = () => {
       // u_time: {
       //   value: 0.0,
       // },
-      time: { value: 0 },
-      color: { value: 0.8 },
-      resolution: { value: new THREE.Vector4() },
+      color1: {
+        value: new THREE.Color("red"),
+      },
+      color2: {
+        value: new THREE.Color("purple"),
+      },
     }),
     []
   );
@@ -34,16 +37,34 @@ const Blob = () => {
     <mesh ref={mesh}>
       <sphereBufferGeometry args={[1.5, 32, 32]} attach="geometry" />
       {/* <boxBufferGeometry args={[1, 1, 1]} attach={"geometry"} /> */}
-      <meshLambertMaterial color={"#F00"} emissive={"#0FF"} />
-      {/* <shaderMaterial
-        fragmentShader={fragment}
-        vertexShader={vertex}
-        side={THREE.DoubleSide}
-        extensions={{
-          derivatives: "#extension GL_OES_standard_derivatives : enable",
-        }}
+      <shaderMaterial
+        fragmentShader={`
+        
+        uniform vec3 color1;
+        uniform vec3 color2;
+      
+        varying vec2 vUv;
+        
+        void main() {
+          
+          gl_FragColor = vec4(mix(color1, color2, vUv.y), 1.0);
+        }
+       `}
+        vertexShader={`
+          varying vec2 vUv;
+
+          void main() {
+            vUv = uv;
+            gl_Position = projectionMatrix * modelViewMatrix * vec4(position,1.0);
+          }
+          `}
+        // side={THREE.DoubleSide}
+        // extensions={{
+        //   derivatives: "#extension GL_OES_standard_derivatives : enable",
+        // }}
         uniforms={uniforms}
-      /> */}
+        wireframe={true}
+      />
     </mesh>
   );
 };
