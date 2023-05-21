@@ -6,9 +6,6 @@
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
 
 <img src="https://img.shields.io/npm/v/vite.svg" alt="npm package">
-[![npm version](https://badge.fury.io/js/react.svg)](https://badge.fury.io/js/react)
-[![CI](https://github.com/athityakumar/colorls/actions/workflows/ruby.yml/badge.svg)](https://github.com/athityakumar/colorls/actions/workflows/ruby.yml)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=shields)](http://makeapullrequest.com)
 
 effect-threejs is an example of a noise effect for `threejs`, which contains custom shaders that make such a visual effect possible.
 
