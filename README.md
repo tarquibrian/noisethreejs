@@ -1,3 +1,3 @@
 # effect-threejs
 
-![My Image](../test.png)
+![My Image](./public/test.png)
