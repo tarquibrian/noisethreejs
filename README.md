@@ -2,7 +2,7 @@
 
 # INFO
 
-[![forthebadge](https://img.shields.io/badge/Three.js-000000.svg?style=for-the-badge&logo=threedotjs&logoColor=white)]]
+(https://img.shields.io/badge/Three.js-000000.svg?style=for-the-badge&logo=threedotjs&logoColor=white)
 https://img.shields.io/badge/React-61DAFB.svg?style=for-the-badge&logo=React&logoColor=black
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
 
