@@ -4,8 +4,7 @@
 
 [![forthebadge](http://forthebadge.com/images/badges/made-with-ruby.svg)](http://forthebadge.com)
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
-
-[![Gem Version](https://badge.fury.io/js/three.svg)](https://badge.fury.io/js/colorls)
+[![npm version](https://badge.fury.io/js/react.svg)](https://badge.fury.io/js/react)
 
 [![CI](https://github.com/athityakumar/colorls/actions/workflows/ruby.yml/badge.svg)](https://github.com/athityakumar/colorls/actions/workflows/ruby.yml)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=shields)](http://makeapullrequest.com)
