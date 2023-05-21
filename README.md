@@ -2,9 +2,11 @@
 
 # INFO
 
+<h3>
 <img alt="Alt text" src="https://img.shields.io/badge/React-61DAFB.svg?style=for-the-badge&logo=React&logoColor=black"/>
 <img alt="Alt text" src="https://img.shields.io/badge/Three.js-000000.svg?style=for-the-badge&logo=threedotjs&logoColor=white"/>
 <img alt="Alt text" src="https://img.shields.io/badge/TypeScript-3178C6.svg?style=for-the-badge&logo=TypeScript&logoColor=white"/>
+ </h3>
 
 <img src="https://img.shields.io/badge/threejs-0.152.2-orange" alt="npm package"> <img src="https://img.shields.io/badge/%40react--three%2Fpostprocessing-threejs-green" alt='npm package'> <img src="https://img.shields.io/badge/%40react--three%2Ffiber-threejs-green" alt='npm package'> <img src="https://img.shields.io/badge/%40react--three%2Fdrei-threejs-green" alt='npm package'>
 
