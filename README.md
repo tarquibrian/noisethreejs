@@ -6,6 +6,7 @@
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
 
 <img src="https://img.shields.io/npm/v/vite.svg" alt="npm package"> <img src="https://img.shields.io/badge/threejs-0.152.2-orange" alt="npm package">
+<img src="https://img.shields.io/badge/%40react--three%2Fpostprocessing-threejs-green" alt='npm package'>
 
 
 effect-threejs is an example of a noise effect for `threejs`, which contains custom shaders that make such a visual effect possible.
