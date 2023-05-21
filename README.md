@@ -5,11 +5,12 @@
 [![forthebadge](http://forthebadge.com/images/badges/made-with-ruby.svg)](http://forthebadge.com)
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
 
-[![Gem Version](https://badge.fury.io/rb/colorls.svg)](https://badge.fury.io/rb/colorls)
+[![Gem Version](https://badge.fury.io/js/three.svg)](https://badge.fury.io/js/colorls)
+
 [![CI](https://github.com/athityakumar/colorls/actions/workflows/ruby.yml/badge.svg)](https://github.com/athityakumar/colorls/actions/workflows/ruby.yml)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=shields)](http://makeapullrequest.com)
 
-A Ruby script that colorizes the `ls` output with color and icons. Here are the screenshots of working example on an iTerm2 terminal (Mac OS), `oh-my-zsh` with `powerlevel9k` theme and `powerline nerd-font + awesome-config` font with the `Solarized Dark` color theme.
+effect-threejs is an example of a noise effect for `threejs`, which contains custom shaders that make such a visual effect possible.
 
 ![My Image](./public/test.png)
 
@@ -53,4 +54,4 @@ useFrame(() => {
 
 # License
 
-The MIT License (MIT) 2023 - [Tarqui Brian](https://github.com/tarquibrian/). Please have a look at the [LICENSE.md](LICENSE.md) for more details.
+The MIT License (MIT) 2023 - [Tarqui Brian](https://github.com/tarquibrian/). Please have a look at the [LICENSE.md](LICENSE) for more details.
