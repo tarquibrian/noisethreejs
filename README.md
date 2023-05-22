@@ -1,6 +1,6 @@
 ## effect-threejs
 
-link <a href="[tarquibrian.github.io/noisethreejs/](https://tarquibrian.github.io/noisethreejs/)" target="_blank">Example</a>
+link <a href="https://tarquibrian.github.io/noisethreejs/" target="_blank">Example</a>
 
 
 # INFO
