@@ -1,5 +1,7 @@
 ## effect-threejs
 
+link <a href="tarquibrian.github.io/noisethreejs/" target="_blank" rel="noopener noreferrer">Example</a>
+
 # INFO
 
 <h3>
