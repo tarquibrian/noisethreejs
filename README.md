@@ -1,6 +1,6 @@
 ## effect-threejs
 
-link <a href="tarquibrian.github.io/noisethreejs/" target="_blank" rel="noopener noreferrer">Example</a>
+link <a href="http://electron.atom.io" target="_blank">Example</a>
 
 # INFO
 
